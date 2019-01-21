@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!-- 语法：v-for="item in items" -->
+    <div id="for">
+        <ul v-for="n in count ">
+            <li>{{n}}</li>
+        </ul>
+    </div>
+</body>
+    <script>
+        new Vue({
+            el:'#for',
+            data:{
+                count:5
+            }
+        })
+    </script>
+</html>

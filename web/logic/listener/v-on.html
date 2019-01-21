@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-on</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!-- 语法： 用于给监听DOM事件 如：<a v-on:click="doSomething"> 表示监听a链接加上点击事件-->
+    <div id="on">
+        <input v-on:click="show()" value="点我" type="button">
+    </div>
+</body>
+    <script>
+        new Vue({
+            el:'#on',
+            methods:{
+                show:function(){
+                    alert("触发了点击事件")
+                }
+            }
+        })
+    </script>
+</html>

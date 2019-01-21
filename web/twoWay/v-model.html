@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue 的双向绑定</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!-- 双向绑定是这，view里的内容改变其model也会改变，反之同理 -->
+    <!-- 构建view -->
+    <div id="vue">
+        <p>{{message}}</p>
+        <input type="text" v-model="message">
+    </div>
+</body>
+    <script>
+        new Vue({
+            el: '#vue',
+            data: {
+                message:'hello vue'
+            }
+        })
+    </script>
+</html>

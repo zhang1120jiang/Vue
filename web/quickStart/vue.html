@@ -6,16 +6,24 @@
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
+    <!-- 这是view，用于数据展示 -->
     <div id="vuefirst">
         <p>{{message}}</p>
     </div>
 </body>
 <script>
+    /* 将view 与 model 进行绑定 */
     new Vue({
         el:'#vuefirst',
         data:{
+            /* 这是model，在view进行展示 */
             message:'hello word'
         }
     })
+    /*
+    *   1：定义View
+        2：定义Model
+        3：创建一个Vue实例或"ViewModel"，它用于连接View和Model
+    * */
 </script>
 </html>

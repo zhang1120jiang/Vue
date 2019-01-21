@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!--语法：v-bind:argument="expression" argument通常是HTML元素的特性（attribute） -->
+    <!--从 1....5 -->
+    <div id="bind">
+        <ul v-for="n in count">
+            <li v-bind:class="pagecount == n ? 'active':''">第{{n}}页</li>
+        </ul>
+    </div>
+</body>
+    <script>
+        new Vue({
+            el:'#bind',
+            data:{
+                count:5,
+                pagecount:2
+            }
+        })
+    </script>
+</html>

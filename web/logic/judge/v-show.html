@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-show</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!-- 语法：v-show="expression" expression:表示model的key -->
+    <!-- 如果不满足条件者会在该dom对象上加上style="display: none;"-->
+    <div id="show">
+        <p v-show="yes">yes：{{yes}}</p>
+        <p v-show="age > 9">age：{{age}}</p>
+    </div>
+</body>
+    <script>
+        new Vue({
+            el:'#show',
+            data:{
+                yes:false,
+                age:10
+            }
+        })
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-if 使用</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+        <!-- 语法：v-if="expression" expression:表示model的key -->
+        <div id="if">
+            <p v-if="age >= 10">age：{{age}}</p>
+            <p v-if="yes">{{yes}}</p>
+        </div>
+</body>
+    <script>
+        new Vue({
+            el: '#if',
+            data:{
+                age:10,
+                yes:true
+            }
+        })
+    </script>
+</html>

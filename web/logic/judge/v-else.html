@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-else</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+        <!-- 必须与v-else 或者 v-show一起使用 -->
+    <div id="else">
+        <p v-if="age >= 10">age：{{age}}</p>
+        <p v-else>走 if else</p>
+        <hr>
+        <p v-show="yes">yes：{{yes}}</p>
+        <p v-else>走 show else</p>
+    </div>
+</body>
+    <script>
+        new Vue({
+            el:'#else',
+            data:{
+                age:9,
+                yes:true
+            }
+        })
+    </script>
+</html>
